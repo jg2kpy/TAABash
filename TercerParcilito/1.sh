@@ -5,9 +5,10 @@ n=$#
 echo "El nombre del script es $0"
 echo "Se ha recibido $n argumentos"
 
-i=$n
+LISTA=("$@")
+i=$#-1
 for arg in "$@"
 do
-    echo "$i"
-    i=$((i-1))
+    echo ${LISTA[$i]}
+    i=$(($i-1))
 done
