@@ -29,7 +29,7 @@ echo "Un comentario sobre el usuario"
 read -e comentario
 echo "El shell que desea usar"
 read shell
-read "Fecha de expiracion de la cuenta formato YYYY-MM-DD"
+echo "Fecha de expiracion de la cuenta formato YYYY-MM-DD"
 read fecha
 echo "Lista de los grupos a agregarse separados por coma, o solo precione enter"
 read grupos
