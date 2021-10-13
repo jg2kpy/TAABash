@@ -34,7 +34,7 @@ read fecha
 echo "Lista de los grupos a agregarse separados por coma, o solo precione enter"
 read grupos
 
-if [ ! -z grupos ]
+if [ -z $grupos ]
 then
     #sudo useradd -gcse $grupo $username $comentario $shell $fecha
 else
