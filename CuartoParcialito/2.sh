@@ -2,6 +2,9 @@
 
 estaSeguro(){
     echo "Esta accion hara que el proceso termine y el dispositivo sea inutilizable"
+
+    echo "Script terminado abruptamente"
+
     echo "Esta seguro que desea terminar? [Y/n]"
     read respuesta
     if [[ $respuesta == "Y" ]];
