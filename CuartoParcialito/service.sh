@@ -1,8 +1,7 @@
 #!/bin/bash
 
 start(){
-    retorno=`sudo su -c "nohup $1 >> /var/log/$1.log &"`
-    echo $retorno >> /proc/run/$1.pid
+    sudo su -c "nohup ./$1 > /var/log/$1.log & echo \$! > '/var/run/$1.pid'"
 }
 
 stop(){
